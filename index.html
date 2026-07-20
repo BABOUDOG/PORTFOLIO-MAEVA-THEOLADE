@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Portfolio — Maëva Théolade</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      background: #b4c0dc;
+      font-family: Arial, sans-serif;
+    }
+
+    .portfolio {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .mobile-link {
+      display: none;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .mobile-link a {
+      color: #111827;
+      font-weight: bold;
+    }
+
+    @media (max-width: 700px) {
+      .portfolio {
+        display: none;
+      }
+
+      .mobile-link {
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <iframe
+    class="portfolio"
+    src="portfolio-maeva-theolade.pdf"
+    title="Portfolio de Maëva Théolade">
+  </iframe>
+
+  <div class="mobile-link">
+    <p>Le portfolio ne s’affiche pas correctement sur votre appareil.</p>
+
+    <a href="portfolio-maeva-theolade.pdf">
+      Ouvrir le portfolio
+    </a>
+  </div>
+</body>
+</html>
